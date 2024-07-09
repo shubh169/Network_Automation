@@ -1,0 +1,2 @@
+cd .. && cd opt/iprf/tmp && cat rpltopology_graphWithMAC.txt
+

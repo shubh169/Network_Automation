@@ -1,0 +1,3 @@
+cd /opt/iprf/firmware && ./ask_node
+cd /opt/iprf/profile && cat config.ini
+cd /opt/iprf/tmp && cat rpltopology_graph.txt

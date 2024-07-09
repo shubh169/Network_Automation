@@ -1,0 +1,6 @@
+config
+ip 10.91.77.123
+command ifconfig
+hostname
+shutdown
+exit

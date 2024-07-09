@@ -1,0 +1,6 @@
+10.91.77.123    shubham
+10.91.77.161
+10.91.77.131   Yudhveer
+
+
+"cd /opt/iprf/firmware && ./ask_node"

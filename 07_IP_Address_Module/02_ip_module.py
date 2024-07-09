@@ -1,0 +1,17 @@
+import ipaddress
+
+ip_subnet=ipaddress.ip_network('192.71.1.0/24')
+# print(ip_subnet)
+# print(dir(ip_subnet))
+# print(ip_subnet.network_address)
+# print(ip_subnet.broadcast_address)
+# print(ip_subnet.prefixlen)
+# print(ip_subnet.version)
+# print(ip_subnet.netmask)
+# print(ip_subnet.hostmask)
+# print(ip_subnet.is_private)
+# print(ip_subnet.is_global)
+# print(ip_subnet.is_loopback)
+# print(ip_subnet.is_multicast)
+# print(ip_subnet.num_addresses)
+# print(ip_subnet.max_prefixlen)

@@ -1,0 +1,150 @@
+dapr-wan0 Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet addr:192.168.249.254  P-t-P:192.168.249.254  Mask:255.255.255.0
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:900  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:500 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth0      Link encap:Ethernet  HWaddr 00:1C:64:00:78:99  
+          inet addr:10.91.77.131  Bcast:10.91.77.255  Mask:255.255.255.0
+          inet6 addr: fe80::21c:64ff:fe00:7899/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:10258 errors:0 dropped:295 overruns:0 frame:0
+          TX packets:1452 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1254190 (1.1 MiB)  TX bytes:303269 (296.1 KiB)
+          Interrupt:42 Base address:0x8000 
+
+eth1      Link encap:Ethernet  HWaddr 00:1C:64:00:78:9A  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:43 Base address:0xc000 
+
+lgwifi0   Link encap:Ethernet  HWaddr 04:CD:15:1A:5B:AC  
+          inet addr:192.168.255.100  Bcast:192.168.255.255  Mask:255.255.255.0
+          inet6 addr: fe80::6cd:15ff:fe1a:5bac/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:1036 (1.0 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:270 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:270 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:40706 (39.7 KiB)  TX bytes:40706 (39.7 KiB)
+
+rpine0    Link encap:Ethernet  HWaddr 04:CD:15:1A:5B:AC  
+          UP BROADCAST RUNNING SLAVE MULTICAST  MTU:2290  Metric:1
+          RX packets:65802 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+tap0      Link encap:Ethernet  HWaddr 00:1C:64:0D:29:81  
+          inet6 addr: fda4:2d0:0:a7:21c:64ff:fe0d:2981/128 Scope:Global
+          inet6 addr: fe80::21c:64ff:fe0d:2981/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:3 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:17 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:376 (376.0 B)  TX bytes:1622 (1.5 KiB)
+
+tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet6 addr: fd00:1122::215:16ff:fe17:1818/64 Scope:Global
+          inet6 addr: fe80::c5f9:261e:dbe6:45c6/64 Scope:Link
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1280  Metric:1
+          RX packets:7 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:500 
+          RX bytes:801 (801.0 B)  TX bytes:528 (528.0 B)
+
+xtun0     Link encap:IPv6-in-IPv4  
+          inet6 addr: fda4:2d0:0:a7::8053:3103/128 Scope:Global
+          inet6 addr: fe80::a5b:4d83/64 Scope:Link
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1434  Metric:1
+          RX packets:12 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:28 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:1026 (1.0 KiB)  TX bytes:3161 (3.0 KiB)
+
+/root
+Usage: ask_node [-h] -d dest [-to TIMEOUT_SEC](-ci command_id | -cn command_name) [command_args]
+ -d dest: ipv6[,port] |  bcast | tr
+ -ci = command_id
+ -cn = command_name
+ -to = timeout in seconds
++------+-----------------+-----------------------+---------------------------------+
+| ID   |  COMMAND NAME   |  COMMAND DESCRIPTION  |        COMMAND ARGUMENTS        |
++------+-----------------+-----------------------+---------------------------------+
+| 0x04 | get_publish     | Get Statistics        |  [-t publish_message type]      |
+|      |                 | Publish  Settings     |  if missing get all publish     |
+|      |                 |                       |  message types                  |
++------+-----------------+-----------------------+---------------------------------+
+| 0x05 | set_publish     | Set Statistics        | -t publish_message              |
+|      |                 | Publish  Settings     | -enable | -disable              |
+|      |                 |                       | -i interval                     |
+|      |                 |                       | -s start_time -e end_time       |
++------+-----------------+-----------------------+---------------------------------+
+| 0x07 | get_config      | Get Configuration     | [-i variable_id]                |
+|      |                 |                       | if missing get all variables    |
++------+-----------------+-----------------------+---------------------------------+
+| 0x08 | set_config      | Set Configuration     | -i variable_id,                 |
+|      |                 |                       | -t variable_type:               |
+|      |                 |                       |     x(hex)                      |
+|      |                 |                       |     | d(int - int32)            |
+|      |                 |                       |     | s(string)                 |
+|      |                 |                       |     | h(short - int16)          |
+|      |                 |                       | -v value                        |
++------+-----------------+-----------------------+---------------------------------+
+| 0x10 | rpl_nb_stats    | RPL Neighbours Status | [-v version(1|2|3|4|5)]         |
+|      |                 |                       |	[-i start_idx] [-s max_size]    |
++------+-----------------+-----------------------+---------------------------------+
+| 0x11 | rpl_dodag       | RPL DODAG Table       |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x12 | rpl_instance    | RPL Instance Info     |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x13 | radio_stats     | Radio Statics         |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x14 | 4e_stats        | 4e Statics            |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x40 | udp_comm_stats  | RPL UDP Communication | -t command type: 1 - trigger    |
+|      |                 |      Statistics       |                  2 - get        |
+|      |                 |                       +---------------------------------+
+|      |                 |                       | Options for 1:                  |
+|      |                 |                       |    -tid:      test_id           |
+|      |                 |                       |    -dst_addr: ipv6 address      |
+|      |                 |                       |    -dst_port: destination port  |
+|      |                 |                       |    -msg_no:   message number    |
+|      |                 |                       |    -msg_sz:   message size      |
+|      |                 |                       +---------------------------------+
+|      |                 |                       | Options for 2: None             |
++------+-----------------+-----------------------+---------------------------------+
+| 0x41 | debug           | Debug                 |     -m message                  |
++------+-----------------+-----------------------+---------------------------------+
+| 0x42 | rib_tg          | RIB Targets           |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x43 | rib_tg_tr       | RIB Targets Transits  |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x44 | fw_version      | Firmware version      |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x45 | get_bcast       | Get broadcast context |                                 |
++------+-----------------+-----------------------+---------------------------------+
+| 0x49 | udp_ping        | Transmit variable size|   [-q req_size] [-r res_size]   |
+|      |                 |   packets via UDP     |                                 |
++------+-----------------+-----------------------+---------------------------------+
+Examples:
+	ask_node -d 2001::d:0:0:8074:53,44965 -cn get_config
+	ask_node -d 2001::d:0:0:8074:53 -ci 0x07
+	ask_node -d 2001::d:0:0:8074:53 -to 20  -ci 0x07 -i 0x02
+	ask_node -d bcast -ci 0x07 -i 0x02
+	ask_node -d 2001::d:0:0:8074:53 -ci 0x08 -i 1 -t x -v FF00FF00 -ci 0x08 -i 0x31 -t d -v 32
+RetCode=0

@@ -1,0 +1,3 @@
+ifconfig
+pwd
+cd .. && cd opt/iprf/firmware && ./ask_node

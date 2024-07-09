@@ -1,0 +1,279 @@
+DEB [20240413-17:11:14.080] thr=1   paramiko.transport: starting thread (client mode): 0x6fe8c50
+DEB [20240413-17:11:14.082] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:11:14.586] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:11:14.586] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:11:14.941] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:11:14.942] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:11:14.978] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:11:14.978] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:11:14.979] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:11:14.979] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:11:14.979] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:11:14.980] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:11:14.980] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:11:14.980] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:11:14.981] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:11:14.982] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:11:14.982] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:11:14.983] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:11:14.984] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:11:14.984] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:11:14.985] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:11:14.985] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:11:14.985] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:11:15.691] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:11:15.694] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:11:15.695] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:11:15.698] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:11:16.469] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:11:17.069] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:11:17.070] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:11:17.072] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:12:41.251] thr=1   paramiko.transport: starting thread (client mode): 0x72d065d0
+DEB [20240413-17:12:41.252] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:12:41.768] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:12:41.768] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:12:42.163] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:12:42.164] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:12:42.610] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:12:42.612] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:12:42.613] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:12:42.614] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:12:43.392] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:12:43.802] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:12:43.802] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:12:43.803] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:21:33.708] thr=1   paramiko.transport: starting thread (client mode): 0xe7ae8680
+DEB [20240413-17:21:33.709] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:21:34.135] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:21:34.136] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:21:34.487] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:21:34.488] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:21:34.488] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:21:34.488] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:21:34.490] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:21:34.491] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:21:34.491] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:21:34.491] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:21:34.491] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:21:34.491] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:21:34.492] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:21:34.493] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:21:34.493] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:21:34.493] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:21:34.934] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:21:34.935] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:21:34.937] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:21:34.938] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:21:35.633] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:21:36.074] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:21:36.076] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:21:36.078] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:23:17.774] thr=1   paramiko.transport: starting thread (client mode): 0xd1804e90
+DEB [20240413-17:23:17.774] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:23:18.210] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:23:18.211] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:23:18.566] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:23:18.567] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:23:18.567] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:23:18.567] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:23:18.569] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:23:18.569] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:23:18.569] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:23:18.570] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:23:18.570] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:23:18.570] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:23:18.571] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:23:18.571] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:23:18.571] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:23:18.572] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:23:18.572] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:23:18.572] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:23:18.573] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:23:18.573] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:23:18.573] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:23:19.019] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:23:19.021] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:23:19.022] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:23:19.023] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:23:19.821] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:23:20.230] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:23:20.231] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:23:20.233] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:26:01.253] thr=1   paramiko.transport: starting thread (client mode): 0x80a68c50
+DEB [20240413-17:26:01.254] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:26:01.683] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:26:01.684] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:26:02.136] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:26:02.136] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:26:02.137] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:26:02.137] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:26:02.137] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:26:02.137] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:26:02.137] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:26:02.139] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:26:02.139] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:26:02.139] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:26:02.140] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:26:02.140] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:26:02.140] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:26:02.140] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:26:02.141] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:26:02.141] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:26:02.141] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:26:02.141] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:26:02.142] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:26:02.606] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:26:02.608] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:26:02.609] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:26:02.610] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:26:03.354] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:26:03.766] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:26:03.766] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:26:03.767] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:26:45.033] thr=1   paramiko.transport: starting thread (client mode): 0xb7b04770
+DEB [20240413-17:26:45.033] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:26:45.466] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:26:45.466] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:26:45.819] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:26:45.819] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:26:45.819] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:26:45.821] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:26:45.822] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:26:45.822] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:26:46.275] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:26:46.276] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:26:46.276] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:26:46.277] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:26:47.021] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:26:47.489] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:26:47.490] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:26:47.492] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-17:28:11.300] thr=1   paramiko.transport: starting thread (client mode): 0x8f828c50
+DEB [20240413-17:28:11.302] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-17:28:11.735] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-17:28:11.736] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-17:28:12.177] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-17:28:12.177] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-17:28:12.178] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-17:28:12.178] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:28:12.178] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-17:28:12.179] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:28:12.179] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-17:28:12.180] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-17:28:12.180] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-17:28:12.181] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-17:28:12.181] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-17:28:12.181] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-17:28:12.182] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-17:28:12.182] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-17:28:12.182] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-17:28:12.183] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-17:28:12.183] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-17:28:12.183] thr=1   paramiko.transport: Compression: none
+DEB [20240413-17:28:12.184] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-17:28:12.625] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-17:28:12.627] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-17:28:12.628] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-17:28:12.630] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-17:28:13.406] thr=1   paramiko.transport: userauth is OK
+INF [20240413-17:28:13.816] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-17:28:13.816] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-17:28:13.819] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240413-18:24:30.411] thr=1   paramiko.transport: starting thread (client mode): 0x6cbf8680
+DEB [20240413-18:24:30.411] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240413-18:24:30.841] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240413-18:24:30.842] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240413-18:24:31.195] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240413-18:24:31.195] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240413-18:24:31.195] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240413-18:24:31.195] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-18:24:31.195] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: client lang: <none>
+DEB [20240413-18:24:31.196] thr=1   paramiko.transport: server lang: <none>
+DEB [20240413-18:24:31.197] thr=1   paramiko.transport: kex follows: False
+DEB [20240413-18:24:31.197] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240413-18:24:31.197] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240413-18:24:31.197] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240413-18:24:31.197] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240413-18:24:31.198] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240413-18:24:31.198] thr=1   paramiko.transport: Compression: none
+DEB [20240413-18:24:31.198] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240413-18:24:31.643] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240413-18:24:31.645] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240413-18:24:31.646] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240413-18:24:31.648] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240413-18:24:32.350] thr=1   paramiko.transport: userauth is OK
+INF [20240413-18:24:32.777] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240413-18:24:32.777] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240413-18:24:32.779] thr=1   paramiko.transport: EOF in transport thread
+DEB [20240422-16:49:09.972] thr=1   paramiko.transport: starting thread (client mode): 0x3ed4b680
+DEB [20240422-16:49:09.972] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.4.0
+DEB [20240422-16:49:10.053] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-OpenSSH_7.6
+INF [20240422-16:49:10.053] thr=1   paramiko.transport: Connected (version 2.0, client OpenSSH_7.6)
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: server key: ssh-rsa, rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: client compress: none, zlib@openssh.com
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: server compress: none, zlib@openssh.com
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: client lang: <none>
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: server lang: <none>
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: kex follows: False
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20240422-16:49:10.063] thr=1   paramiko.transport: Kex: curve25519-sha256@libssh.org
+DEB [20240422-16:49:10.064] thr=1   paramiko.transport: HostKey: ecdsa-sha2-nistp256
+DEB [20240422-16:49:10.064] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20240422-16:49:10.064] thr=1   paramiko.transport: MAC: hmac-sha2-256
+DEB [20240422-16:49:10.064] thr=1   paramiko.transport: Compression: none
+DEB [20240422-16:49:10.064] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20240422-16:49:10.157] thr=1   paramiko.transport: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEB [20240422-16:49:10.159] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20240422-16:49:10.160] thr=2   paramiko.transport: Adding ecdsa-sha2-nistp256 host key for 10.91.77.131: b'a0774047b66e847b660c70bdf5755159'
+DEB [20240422-16:49:10.161] thr=1   paramiko.transport: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEB [20240422-16:49:10.166] thr=1   paramiko.transport: userauth is OK
+INF [20240422-16:49:10.196] thr=1   paramiko.transport: Auth banner: b'...                                        .yy-   `..`                          \nsho                                        .hh-   -yy/                          \nsho         .-----.    `-.`----.     `.-----hh-  .-::.    `.----.`              \nsho        `+yyyyyys.  :yyyysyyyo.  .syyssyyhh- `+yyy/  .oyyyyyys.              \nsho         ```...yho  :hy/```-sh+  ohy.```/hh-  `.sh/  /hy-...``               \nsho        .+ossssyho  :hy.   `oh+  ohs    -hh-   `sh/  .oyyssso/.              \nsho       .yh+::-:yho  :hy.   `oh+  ohs    -hh-   `sh/    `.--:ohs`     ``      \n+hy/::::. -yh/--:+yho  :hy.   `oh+  /hy/-:/shh-   `sh/  `:::::/oho`    `/+`     \n`/oooooo:  :ossss++s+  -oo.    +s/  `:ossss+oo.   `+o:  `ooooooo:`     `/+.     \n             ````  `    `       `      ```` ``      `     ````    `````.++-`````\n                               :+-   `-//+++/`                    //////+o//////\n                               oh/  .sysoooo+`                     `````/+.`````\n                               oh/  +hy`        +o:    .o+.`/o:/oo`    `/+.     \n                               oh/  +hy  .::::- /yy.   oh+ `shyo//`    `//`     \n                               oh/  +hy  :ooyho``oho` .hy. `sh+`        ``      \n                               oh/  +hy    `+ho` .yh:`oh+  `sh+                 \n                               oh/  /hy-```.oho`  :hy+yy.  `sh+                 \n                               oh/  `oyyssssys:   `oyhh/   `sy+                 \n                               oh/    `--::-.`     `+hy`    --.                 \n                               oh/              `-:+yy:                         \n                               oh/              `+so+-                          \n                               oh/                                              \n'
+INF [20240422-16:49:10.198] thr=1   paramiko.transport: Authentication (password) successful!
+DEB [20240422-16:49:10.199] thr=1   paramiko.transport: EOF in transport thread
